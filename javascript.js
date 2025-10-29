@@ -45,15 +45,15 @@ function getHumanChoice(){
 
 function playRound(humanChoice,computerChoice){
     if (humanChoice === computerChoice){
-        return alert("Draw you both chose " + humanChoice)
+        return alert("Draw you both chose " + humanChoice + "You: " + humanScore +" Computer: "+computerScore)
     } 
     else if (humanChoice === "rock" && computerChoice === "paper"){
         computerScore++;
-        return alert("Computer wins ,they chose paper")
+        return alert("Computer wins ,they chose paper, You: " + humanScore +" Computer: "+computerScore)
     }
     else if (humanChoice === "rock" && computerChoice === "scissors"){
         humanScore++;
-        return alert("You win, they chose scissors")
+        return alert("You win, they chose scissors, You: " + humanScore +" Computer: "+computerScore)
     }
     else if (humanChoice === "paper" && computerChoice === "rock"){
         humanScore++;
