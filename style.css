@@ -1,0 +1,9 @@
+.head , .btns {
+    gap: 200px;
+    margin-bottom: 100px;
+}
+
+.head , .btns{
+    display: flex;
+    justify-content: center;
+}

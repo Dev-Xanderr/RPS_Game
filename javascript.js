@@ -20,7 +20,7 @@ function getComputerChoice(){
         return "scissors"
     }
 }
-
+/*
 function getHumanChoice(){
     let isValidInput = false;
     while (!isValidInput) {
@@ -41,9 +41,10 @@ function getHumanChoice(){
     }
     return userInput
 }
+*/
 
-
-function playRound(humanChoice,computerChoice){
+function playRoundR(humanChoice,computerChoice){
+    humanChoice = "rock";
     if (humanChoice === computerChoice){
         return alert("Draw you both chose " + humanChoice + "You: " + humanScore +" Computer: "+computerScore)
     } 
@@ -73,10 +74,17 @@ function playRound(humanChoice,computerChoice){
     }
 }   
 
+const btnrock = document.getElementById("btn1");
+
+btnrock.addEventListener("click", playRoundR);
 
 
 
 
+
+
+
+/*
 function playGame(){
     for (let i = 1; i <= 5; i++){
         let humanSelection = getHumanChoice();
@@ -95,3 +103,4 @@ function playGame(){
 
 
 playGame()
+*/
